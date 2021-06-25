@@ -21,8 +21,7 @@ class TheMovieDbInterceptor : Interceptor {
             .addHeader("Accept", "application/json")
             .build()
 
-
-       return chain.proceed(request)
+        return chain.proceed(request)
     }
 
 }
