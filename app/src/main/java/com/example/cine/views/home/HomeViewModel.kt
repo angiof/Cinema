@@ -1,4 +1,4 @@
-package com.example.cine.ui.home
+package com.example.cine.views.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
