@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class TheMovieDbClient {
 
-    private val theMovieDbService: TheMovieDBServices
+    private val theMovieDbService: TheMovieDBService
     private val retrofit: Retrofit
 
     companion object {
@@ -33,9 +33,9 @@ class TheMovieDbClient {
             .client(cliente)
             .build()
         //intanziare il servizio retro da obj  retrofit
-        theMovieDbService = retrofit.create(TheMovieDBServices::class.java)
+        theMovieDbService = retrofit.create(TheMovieDBService::class.java)
     }
 
-    fun theMovieDbService() = theMovieDbService
+    fun getTheMovieDbServices() = theMovieDbService
 
 }

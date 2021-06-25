@@ -4,7 +4,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 
-interface TheMovieDBServices {
+interface TheMovieDBService {
 
     @GET("movie/popular")
     fun getPopularMovies(): Call<POpularMoviesResponces>
