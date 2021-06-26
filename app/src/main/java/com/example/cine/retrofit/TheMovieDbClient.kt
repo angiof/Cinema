@@ -16,8 +16,7 @@ class TheMovieDbClient {
                 if (field == null) {
                     instance = TheMovieDbClient()
                 }
-                return instance
-
+                return field
             }
     }
 
@@ -35,7 +34,7 @@ class TheMovieDbClient {
         //intanziare il servizio retro da obj  retrofit
         theMovieDbService = retrofit.create(TheMovieDBService::class.java)
     }
-
+    //si crea la fun che ritorna i dati dalla rete
     fun getTheMovieDbServices() = theMovieDbService
 
 }

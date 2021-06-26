@@ -14,7 +14,7 @@ class TheMovieDbInterceptor : Interceptor {
             .addQueryParameter(Constanti.URL_API_KEY_PARAM, Constanti.API_KEY)
             .addQueryParameter(Constanti.URL_PARAM_LANGUAGE, "it-It").build()
 
-
+//si crea la richiesta finianle per intecpetor che riceva come parametri la url parametrizzata
         var request = chain.request()
         request = request?.newBuilder().url(urlConParametri)
             .addHeader("Content-Type", "application/json")

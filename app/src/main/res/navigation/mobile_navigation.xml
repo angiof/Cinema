@@ -7,19 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_movies"
-        android:name="com.example.cine.views.home.HomeFragment"
+        class = "com.example.cine.views.Movies.MovieListFragment"
         android:label="@string/movies"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_movie_list" />
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.cine.views.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.cine.views.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

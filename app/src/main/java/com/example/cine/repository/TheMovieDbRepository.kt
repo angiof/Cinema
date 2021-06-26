@@ -36,8 +36,7 @@ class TheMovieDbRepository {
                 call: Call<POpularMoviesResponces>,
                 response: Response<POpularMoviesResponces>
             ) {
-
-                TODO("Not yet implemented")
+                popularMovies?.value = response.body()?.results
             }
 
             override fun onFailure(call: Call<POpularMoviesResponces>, t: Throwable) {
